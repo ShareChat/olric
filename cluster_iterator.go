@@ -20,8 +20,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/buraksezer/olric/internal/dmap"
-	"github.com/buraksezer/olric/internal/protocol"
+	"github.com/ShareChat/olric/internal/dmap"
+	"github.com/ShareChat/olric/internal/protocol"
 )
 
 type currentCursor struct {

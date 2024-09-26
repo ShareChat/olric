@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/buraksezer/olric/internal/kvstore/entry"
-	"github.com/buraksezer/olric/internal/kvstore/table"
-	"github.com/buraksezer/olric/pkg/storage"
+	"github.com/ShareChat/olric/internal/kvstore/entry"
+	"github.com/ShareChat/olric/internal/kvstore/table"
+	"github.com/ShareChat/olric/pkg/storage"
 	"github.com/cespare/xxhash/v2"
 	"github.com/stretchr/testify/require"
 )

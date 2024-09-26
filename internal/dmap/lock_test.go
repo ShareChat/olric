@@ -17,12 +17,12 @@ package dmap
 import (
 	"context"
 	"encoding/hex"
-	"github.com/buraksezer/olric/internal/protocol"
+	"github.com/ShareChat/olric/internal/protocol"
 	"strconv"
 	"testing"
 	"time"
 
-	"github.com/buraksezer/olric/internal/testcluster"
+	"github.com/ShareChat/olric/internal/testcluster"
 	"github.com/stretchr/testify/require"
 )
 

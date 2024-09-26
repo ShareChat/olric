@@ -22,8 +22,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/buraksezer/olric/internal/cluster/partitions"
-	"github.com/buraksezer/olric/pkg/storage"
+	"github.com/ShareChat/olric/internal/cluster/partitions"
+	"github.com/ShareChat/olric/pkg/storage"
 	"golang.org/x/sync/semaphore"
 )
 

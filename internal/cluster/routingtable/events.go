@@ -15,8 +15,8 @@
 package routingtable
 
 import (
-	"github.com/buraksezer/olric/events"
-	"github.com/buraksezer/olric/internal/discovery"
+	"github.com/ShareChat/olric/events"
+	"github.com/ShareChat/olric/internal/discovery"
 	"time"
 )
 

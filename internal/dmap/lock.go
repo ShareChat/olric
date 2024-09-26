@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/buraksezer/olric/internal/cluster/partitions"
-	"github.com/buraksezer/olric/internal/protocol"
+	"github.com/ShareChat/olric/internal/cluster/partitions"
+	"github.com/ShareChat/olric/internal/protocol"
 )
 
 var (

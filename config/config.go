@@ -23,7 +23,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/buraksezer/olric/hasher"
+	"github.com/ShareChat/olric/hasher"
 	"github.com/hashicorp/memberlist"
 )
 

@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/buraksezer/olric/internal/testcluster"
+	"github.com/ShareChat/olric/internal/testcluster"
 	"github.com/redis/go-redis/v9"
 	"github.com/stretchr/testify/require"
 )

@@ -23,8 +23,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/buraksezer/olric/config/internal/loader"
-	"github.com/buraksezer/olric/hasher"
+	"github.com/ShareChat/olric/config/internal/loader"
+	"github.com/ShareChat/olric/hasher"
 	"github.com/hashicorp/memberlist"
 	"github.com/pkg/errors"
 )

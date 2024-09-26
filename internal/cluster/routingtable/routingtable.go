@@ -21,17 +21,17 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/buraksezer/olric/internal/protocol"
+	"github.com/ShareChat/olric/internal/protocol"
 
+	"github.com/ShareChat/olric/config"
+	"github.com/ShareChat/olric/internal/checkpoint"
+	"github.com/ShareChat/olric/internal/cluster/partitions"
+	"github.com/ShareChat/olric/internal/discovery"
+	"github.com/ShareChat/olric/internal/environment"
+	"github.com/ShareChat/olric/internal/server"
+	"github.com/ShareChat/olric/internal/service"
+	"github.com/ShareChat/olric/pkg/flog"
 	"github.com/buraksezer/consistent"
-	"github.com/buraksezer/olric/config"
-	"github.com/buraksezer/olric/internal/checkpoint"
-	"github.com/buraksezer/olric/internal/cluster/partitions"
-	"github.com/buraksezer/olric/internal/discovery"
-	"github.com/buraksezer/olric/internal/environment"
-	"github.com/buraksezer/olric/internal/server"
-	"github.com/buraksezer/olric/internal/service"
-	"github.com/buraksezer/olric/pkg/flog"
 	"github.com/hashicorp/memberlist"
 )
 

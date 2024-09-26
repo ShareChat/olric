@@ -16,7 +16,7 @@ package discovery
 
 import (
 	"fmt"
-	"github.com/buraksezer/olric/pkg/service_discovery"
+	"github.com/ShareChat/olric/pkg/service_discovery"
 	"github.com/hashicorp/memberlist"
 	"log"
 	"net"
@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/buraksezer/olric/internal/testutil"
+	"github.com/ShareChat/olric/internal/testutil"
 	"github.com/stretchr/testify/require"
 )
 

@@ -22,8 +22,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/buraksezer/olric"
-	"github.com/buraksezer/olric/config"
+	"github.com/ShareChat/olric"
+	"github.com/ShareChat/olric/config"
 	"golang.org/x/sync/errgroup"
 )
 

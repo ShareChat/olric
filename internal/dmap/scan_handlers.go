@@ -15,9 +15,9 @@
 package dmap
 
 import (
-	"github.com/buraksezer/olric/internal/cluster/partitions"
-	"github.com/buraksezer/olric/internal/protocol"
-	"github.com/buraksezer/olric/pkg/storage"
+	"github.com/ShareChat/olric/internal/cluster/partitions"
+	"github.com/ShareChat/olric/internal/protocol"
+	"github.com/ShareChat/olric/pkg/storage"
 	"github.com/tidwall/redcon"
 	"strconv"
 )

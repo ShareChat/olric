@@ -19,9 +19,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/buraksezer/olric/internal/cluster/partitions"
-	"github.com/buraksezer/olric/internal/testcluster"
-	"github.com/buraksezer/olric/internal/testutil"
+	"github.com/ShareChat/olric/internal/cluster/partitions"
+	"github.com/ShareChat/olric/internal/testcluster"
+	"github.com/ShareChat/olric/internal/testutil"
 )
 
 func TestDMap_Fragment(t *testing.T) {
