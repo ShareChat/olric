@@ -27,9 +27,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/buraksezer/olric/internal/kvstore/entry"
-	"github.com/buraksezer/olric/internal/kvstore/table"
-	"github.com/buraksezer/olric/pkg/storage"
+	"github.com/ShareChat/olric/internal/kvstore/entry"
+	"github.com/ShareChat/olric/internal/kvstore/table"
+	"github.com/ShareChat/olric/pkg/storage"
 )
 
 const (

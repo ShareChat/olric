@@ -25,7 +25,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/buraksezer/olric/internal/util"
+	"github.com/ShareChat/olric/internal/util"
 	"github.com/tidwall/redcon"
 )
 

@@ -17,14 +17,14 @@ package dmap
 import (
 	"context"
 	"fmt"
-	"github.com/buraksezer/olric/internal/kvstore"
-	"github.com/buraksezer/olric/pkg/storage"
+	"github.com/ShareChat/olric/internal/kvstore"
+	"github.com/ShareChat/olric/pkg/storage"
 	"testing"
 	"time"
 
-	"github.com/buraksezer/olric/config"
-	"github.com/buraksezer/olric/internal/testcluster"
-	"github.com/buraksezer/olric/internal/testutil"
+	"github.com/ShareChat/olric/config"
+	"github.com/ShareChat/olric/internal/testcluster"
+	"github.com/ShareChat/olric/internal/testutil"
 	"github.com/stretchr/testify/require"
 )
 

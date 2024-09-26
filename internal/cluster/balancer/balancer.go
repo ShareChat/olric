@@ -20,13 +20,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/buraksezer/olric/config"
-	"github.com/buraksezer/olric/internal/cluster/partitions"
-	"github.com/buraksezer/olric/internal/cluster/routingtable"
-	"github.com/buraksezer/olric/internal/discovery"
-	"github.com/buraksezer/olric/internal/environment"
-	"github.com/buraksezer/olric/internal/service"
-	"github.com/buraksezer/olric/pkg/flog"
+	"github.com/ShareChat/olric/config"
+	"github.com/ShareChat/olric/internal/cluster/partitions"
+	"github.com/ShareChat/olric/internal/cluster/routingtable"
+	"github.com/ShareChat/olric/internal/discovery"
+	"github.com/ShareChat/olric/internal/environment"
+	"github.com/ShareChat/olric/internal/service"
+	"github.com/ShareChat/olric/pkg/flog"
 )
 
 type Balancer struct {

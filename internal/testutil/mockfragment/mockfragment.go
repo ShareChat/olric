@@ -20,9 +20,9 @@ import (
 	mrand "math/rand"
 	"sync"
 
-	"github.com/buraksezer/olric/internal/cluster/partitions"
-	"github.com/buraksezer/olric/internal/discovery"
-	"github.com/buraksezer/olric/pkg/storage"
+	"github.com/ShareChat/olric/internal/cluster/partitions"
+	"github.com/ShareChat/olric/internal/discovery"
+	"github.com/ShareChat/olric/pkg/storage"
 )
 
 type Result struct {

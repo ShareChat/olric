@@ -18,10 +18,10 @@ import (
 	"context"
 	"errors"
 
-	"github.com/buraksezer/olric/internal/cluster/partitions"
-	"github.com/buraksezer/olric/internal/discovery"
-	"github.com/buraksezer/olric/internal/protocol"
-	"github.com/buraksezer/olric/internal/stats"
+	"github.com/ShareChat/olric/internal/cluster/partitions"
+	"github.com/ShareChat/olric/internal/discovery"
+	"github.com/ShareChat/olric/internal/protocol"
+	"github.com/ShareChat/olric/internal/stats"
 	"golang.org/x/sync/errgroup"
 )
 

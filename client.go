@@ -18,9 +18,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/buraksezer/olric/internal/dmap"
-	"github.com/buraksezer/olric/pkg/storage"
-	"github.com/buraksezer/olric/stats"
+	"github.com/ShareChat/olric/internal/dmap"
+	"github.com/ShareChat/olric/pkg/storage"
+	"github.com/ShareChat/olric/stats"
 )
 
 const DefaultScanCount = 10

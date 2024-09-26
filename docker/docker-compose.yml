@@ -47,8 +47,8 @@ services:
       cd /go/src/github.com/buraksezer/olric-consul-plugin &&
       go build -buildmode=plugin -o /usr/lib/olric-consul-plugin.so &&
       cd /go/src/github.com/buraksezer/olric &&
-      go build -v -o /go/bin/olricd /go/src/github.com/buraksezer/olric/cmd/olricd/main.go &&
-      /go/bin/olricd -c /go/src/github.com/buraksezer/olric/cmd/olricd/olricd-local.yaml"
+      go build -v -o /go/bin/olricd /go/src/github.com/ShareChat/olric/cmd/olricd/main.go &&
+      /go/bin/olricd -c /go/src/github.com/ShareChat/olric/cmd/olricd/olricd-local.yaml"
     volumes:
       - ${PWD}/olricd-consul.yaml:/etc/olricd.yaml:ro
       - ../:/go/src/github.com/buraksezer/olric

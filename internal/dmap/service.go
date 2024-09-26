@@ -20,17 +20,17 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/buraksezer/olric/config"
-	"github.com/buraksezer/olric/events"
-	"github.com/buraksezer/olric/internal/cluster/partitions"
-	"github.com/buraksezer/olric/internal/cluster/routingtable"
-	"github.com/buraksezer/olric/internal/environment"
-	"github.com/buraksezer/olric/internal/locker"
-	"github.com/buraksezer/olric/internal/protocol"
-	"github.com/buraksezer/olric/internal/server"
-	"github.com/buraksezer/olric/internal/service"
-	"github.com/buraksezer/olric/pkg/flog"
-	"github.com/buraksezer/olric/pkg/storage"
+	"github.com/ShareChat/olric/config"
+	"github.com/ShareChat/olric/events"
+	"github.com/ShareChat/olric/internal/cluster/partitions"
+	"github.com/ShareChat/olric/internal/cluster/routingtable"
+	"github.com/ShareChat/olric/internal/environment"
+	"github.com/ShareChat/olric/internal/locker"
+	"github.com/ShareChat/olric/internal/protocol"
+	"github.com/ShareChat/olric/internal/server"
+	"github.com/ShareChat/olric/internal/service"
+	"github.com/ShareChat/olric/pkg/flog"
+	"github.com/ShareChat/olric/pkg/storage"
 )
 
 var errFragmentNotFound = errors.New("fragment not found")

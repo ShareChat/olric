@@ -20,8 +20,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/buraksezer/olric/config"
-	"github.com/buraksezer/olric/internal/protocol"
+	"github.com/ShareChat/olric/config"
+	"github.com/ShareChat/olric/internal/protocol"
 	"github.com/stretchr/testify/require"
 	"github.com/tidwall/redcon"
 )

@@ -1,6 +1,6 @@
 # Olric [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Olric%3A+Distributed+and+in-memory+key%2Fvalue+database.+It+can+be+used+both+as+an+embedded+Go+library+and+as+a+language-independent+service.+&url=https://github.com/buraksezer/olric&hashtags=golang,distributed,database)
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/buraksezer/olric.svg)](https://pkg.go.dev/github.com/buraksezer/olric) [![Coverage Status](https://coveralls.io/repos/github/buraksezer/olric/badge.svg?branch=master)](https://coveralls.io/github/buraksezer/olric?branch=master) [![Build Status](https://travis-ci.org/buraksezer/olric.svg?branch=master)](https://travis-ci.org/buraksezer/olric) [![Go Report Card](https://goreportcard.com/badge/github.com/buraksezer/olric)](https://goreportcard.com/report/github.com/buraksezer/olric) [![Discord](https://img.shields.io/discord/721708998021087273.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/ahK7Vjr8We) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Go Reference](https://pkg.go.dev/badge/github.com/buraksezer/olric.svg)](https://pkg.go.dev/github.com/buraksezer/olric) [![Coverage Status](https://coveralls.io/repos/github/ShareChat/olric/badge.svg?branch=master)](https://coveralls.io/github/buraksezer/olric?branch=master) [![Build Status](https://travis-ci.org/buraksezer/olric.svg?branch=master)](https://travis-ci.org/buraksezer/olric) [![Go Report Card](https://goreportcard.com/badge/github.com/buraksezer/olric)](https://goreportcard.com/report/github.com/buraksezer/olric) [![Discord](https://img.shields.io/discord/721708998021087273.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/ahK7Vjr8We) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Olric is a distributed, in-memory key/value store and cache. It's designed from the ground up to be distributed, and it can be 
 used both as an embedded Go library and as a language-independent service.
@@ -22,14 +22,14 @@ See [Docker](#docker) and [Samples](#samples) sections to get started!
 
 Join our [Discord server!](https://discord.gg/ahK7Vjr8We)
 
-The current production version is [v0.5.7](https://github.com/buraksezer/olric/tree/release/v0.5.0#olric-)
+The current production version is [v0.5.7](https://github.com/ShareChat/olric/tree/release/v0.5.0#olric-)
 
 ### About versions
 
 Olric v0.4 and previous versions use *Olric Binary Protocol*, v0.5.x and later use [Redis serialization protocol](https://redis.io/docs/reference/protocol-spec/) for communication and the API was significantly changed.
 Olric v0.4.x tree is going to receive bug fixes and security updates forever, but I would recommend considering an upgrade to the new version.
 
-This document only covers `v0.5.x` and later. See v0.4.x documents [here](https://github.com/buraksezer/olric/tree/release/v0.4.0#olric-).
+This document only covers `v0.5.x` and later. See v0.4.x documents [here](https://github.com/ShareChat/olric/tree/release/v0.4.0#olric-).
 
 ## At a glance
 
@@ -163,7 +163,7 @@ See [Architecture](#architecture) section to see details.
 
 We have a few communication channels: 
 
-* [Issue Tracker](https://github.com/buraksezer/olric/issues)
+* [Issue Tracker](https://github.com/ShareChat/olric/issues)
 * [Discord server](https://discord.gg/ahK7Vjr8We)
 
 You should know that the issue tracker is only intended for bug reports and feature requests.
@@ -175,7 +175,7 @@ Software doesn't maintain itself. If you need support on complex topics or reque
 With a correctly configured Golang environment:
 
 ```
-go install github.com/buraksezer/olric/cmd/olricd@v0.5.7
+go install github.com/ShareChat/olric/cmd/olricd@v0.5.7
 ```
 
 Now you can start using Olric:
@@ -213,7 +213,7 @@ OK
 With olricd, you can create an Olric cluster with a few commands. This is how to install olricd:
 
 ```bash
-go install github.com/buraksezer/olric/cmd/olricd@v0.5.7
+go install github.com/ShareChat/olric/cmd/olricd@v0.5.7
 ```
 
 Let's create a cluster with the following:
@@ -916,13 +916,13 @@ You should feel free to ask any questions about configuration and integration. P
 Olric provides a function to generate default configuration to use in embedded-member mode:
 
 ```go
-import "github.com/buraksezer/olric/config"
+import "github.com/ShareChat/olric/config"
 ...
 c := config.New("local")
 ```
 
 The `New` function takes a parameter called `env`. It denotes the network environment and consumed by [hashicorp/memberlist](https://github.com/hashicorp/memberlist). 
-Default configuration is good enough for distributed caching scenario. In order to see all configuration parameters, please take a look at [this](https://godoc.org/github.com/buraksezer/olric/config).
+Default configuration is good enough for distributed caching scenario. In order to see all configuration parameters, please take a look at [this](https://godoc.org/github.com/ShareChat/olric/config).
 
 See [Sample Code](#sample-code) section for an introduction.
 
@@ -934,13 +934,13 @@ You can also import configuration from a YAML file by using the `Load` function:
 c, err := config.Load(path/to/olric.yaml)
 ```
 
-A sample configuration file in YAML format can be found [here](https://github.com/buraksezer/olric/blob/master/cmd/olricd/olricd.yaml). This may be the most appropriate way to manage the Olric configuration.
+A sample configuration file in YAML format can be found [here](https://github.com/ShareChat/olric/blob/master/cmd/olricd/olricd.yaml). This may be the most appropriate way to manage the Olric configuration.
 
 
 ### Client-Server Mode
 
 Olric provides **olricd** to implement client-server mode. olricd gets a YAML file for the configuration. The most basic  functionality of olricd is that 
-translating YAML configuration into Olric's configuration struct. A sample `olricd.yaml` file  is being provided [here](https://github.com/buraksezer/olric/blob/master/cmd/olricd/olricd.yaml).
+translating YAML configuration into Olric's configuration struct. A sample `olricd.yaml` file  is being provided [here](https://github.com/ShareChat/olric/blob/master/cmd/olricd/olricd.yaml).
 
 ### Network Configuration
 
@@ -1191,7 +1191,7 @@ dmaps:
     evictionPolicy: "NONE" # NONE/LRU
 ```
 
-If you prefer embedded-member deployment scenario, please take a look at [config#CacheConfig](https://godoc.org/github.com/buraksezer/olric/config#CacheConfig) and [config#DMapCacheConfig](https://godoc.org/github.com/buraksezer/olric/config#DMapCacheConfig) for the configuration.
+If you prefer embedded-member deployment scenario, please take a look at [config#CacheConfig](https://godoc.org/github.com/ShareChat/olric/config#CacheConfig) and [config#DMapCacheConfig](https://godoc.org/github.com/ShareChat/olric/config#DMapCacheConfig) for the configuration.
 
 
 ### Lock Implementation
@@ -1255,8 +1255,8 @@ import (
   "log"
   "time"
 
-  "github.com/buraksezer/olric"
-  "github.com/buraksezer/olric/config"
+  "github.com/ShareChat/olric"
+  "github.com/ShareChat/olric/config"
 )
 
 func main() {
@@ -1348,8 +1348,8 @@ import (
   "log"
   "time"
 
-  "github.com/buraksezer/olric"
-  "github.com/buraksezer/olric/config"
+  "github.com/ShareChat/olric"
+  "github.com/ShareChat/olric/config"
 )
 
 func main() {
@@ -1440,7 +1440,7 @@ import (
   "log"
   "time"
 
-  "github.com/buraksezer/olric"
+  "github.com/ShareChat/olric"
 )
 
 func main() {
@@ -1509,8 +1509,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/buraksezer/olric"
-	"github.com/buraksezer/olric/config"
+	"github.com/ShareChat/olric"
+	"github.com/ShareChat/olric/config"
 )
 
 func main() {
@@ -1619,7 +1619,7 @@ import (
   "log"
   "time"
 
-  "github.com/buraksezer/olric"
+  "github.com/ShareChat/olric"
 )
 
 func main() {

@@ -15,7 +15,7 @@
 package pubsub
 
 import (
-	"github.com/buraksezer/olric/internal/protocol"
+	"github.com/ShareChat/olric/internal/protocol"
 	"github.com/tidwall/redcon"
 )
 

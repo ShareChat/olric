@@ -18,7 +18,7 @@ import (
 	"encoding/binary"
 	"time"
 
-	"github.com/buraksezer/olric/config"
+	"github.com/ShareChat/olric/config"
 	"github.com/cespare/xxhash/v2"
 	"github.com/vmihailenco/msgpack/v5"
 )

@@ -20,10 +20,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/buraksezer/olric/events"
-	"github.com/buraksezer/olric/internal/discovery"
-	"github.com/buraksezer/olric/internal/protocol"
-	"github.com/buraksezer/olric/internal/testutil"
+	"github.com/ShareChat/olric/events"
+	"github.com/ShareChat/olric/internal/discovery"
+	"github.com/ShareChat/olric/internal/protocol"
+	"github.com/ShareChat/olric/internal/testutil"
 	"github.com/stretchr/testify/require"
 	"github.com/tidwall/redcon"
 )

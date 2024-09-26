@@ -18,7 +18,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/buraksezer/olric/internal/protocol"
+	"github.com/ShareChat/olric/internal/protocol"
 	"github.com/stretchr/testify/require"
 )
 

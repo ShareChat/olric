@@ -1,4 +1,4 @@
-module github.com/buraksezer/olric
+module github.com/ShareChat/olric
 
 go 1.13
 
